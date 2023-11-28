@@ -1,9 +1,9 @@
 import { app } from "./app";
-const PORT = 3333
+import { env } from "./env";
 
 app.listen({
   host: '0.0.0.0',// hack to  able connection from front-end 
-  port: PORT,
+  port: env.PORT,
 }).then(() => {
-  console.log(`🚀 HTTP Server Running on port ${PORT}!`)
+  console.log(`🚀 HTTP Server Running on port ${env.PORT}!`)
 })

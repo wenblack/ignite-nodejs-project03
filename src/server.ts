@@ -1,8 +1,9 @@
 import { app } from "./app";
+const PORT = 3333
 
 app.listen({
   host: '0.0.0.0',
-  port: 3333,
+  port: PORT,
 }).then(() => {
-  console.log('🚀 HTTP Server Running!')
+  console.log(`🚀 HTTP Server Running on port ${PORT}!`)
 })
